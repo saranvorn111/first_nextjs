@@ -1,9 +1,23 @@
-import React from 'react'
+import AboutUs from "@/components/AboutUs";
+import Image from "next/image";
+import React from "react";
+import cover from "@/public/images/cm3.jpg"
 
 function About() {
   return (
-    <div className='container mx-auto px-4 py-8 mt-20'>Hello About page</div>
-  )
+    <div>
+      <AboutUs></AboutUs>
+      <Image
+        src={cover}
+        alt="Beautiful scenery"
+        layout="responsive" 
+        width={1200} 
+        objectFit="cover" 
+        className="w-full mt-10"
+        quality={100}
+      />
+    </div>
+  );
 }
 
 export default About;
